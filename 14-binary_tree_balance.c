@@ -14,7 +14,7 @@ size_t max(size_t a, size_t b)
 }
 
 /**
- * binary_tree_height - measures the height of a binary tree
+ * _binary_tree_height - measures the height of a binary tree
  * @tree: pointer to the root node of the tree to measure the height
  * Return: return height or 0 if null
  */
@@ -30,7 +30,7 @@ int _binary_tree_height(const binary_tree_t *tree)
 }
 
 /**
- * _binary_tree_balance - measures the balance of a binary tree
+ * binary_tree_balance - measures the balance of a binary tree
  * @tree: pointer to the root node of the tree to measure the balance
  * Return: return balance or 0 if null
  */
