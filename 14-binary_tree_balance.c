@@ -6,7 +6,7 @@
  * @tree: pointer to the root node of the tree to measure the balance
  * Return: return balance or 0 if null
  */
-size_t binary_tree_balance(const binary_tree_t *tree)
+int binary_tree_balance(const binary_tree_t *tree)
 {
 
 	if (!tree || (!tree->right && !tree->left))
