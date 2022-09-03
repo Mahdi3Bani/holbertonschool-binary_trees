@@ -19,19 +19,19 @@ int _depth(const binary_tree_t *tree)
  * @level: level
  * Return: 1 if perfect otherwise 0
  */
-int perfect(const binary_tree_t *tree, int d, int level)
+int perfect(const binary_tree_t *tree, int depth, int level)
 {
 	if (!tree)
 		return (0);
 
-	if (!tree->left && tree->right)
-		return (d = level + 1);
+	if (!tree->left && !tree->right)
+		return (depth = level + 1);
 
 	if (!tree->left || !tree->right)
 		return 0;
 
-	return (perfect(tree->left, d, level + 1) &&
-			perfect(tree->right, d, level + 1));
+	return (perfect(tree->left, depth, level + 1) &&
+			perfect(tree->right, depth, level + 1));
 }
 
 /**
