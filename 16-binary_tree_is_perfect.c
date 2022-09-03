@@ -7,7 +7,10 @@
 int _depth(const binary_tree_t *tree)
 {
 
-		return (_depth(tree->parent) + 1);
+	if (!tree || !tree->parent)
+		return (0);
+
+	return (_depth(tree->parent) + 1);
 }
 /**
  * perfect - check tree is perfect
